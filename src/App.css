@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .bg-res {
+    background-image: url(${images[selectedImageIndex]})
+  }
+}
+
+/* Media query for screens between 601px and 900px wide */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .bg-res {
+    background-image: url("/public/img/img2.png")
+  }
+}
+
+/* Media query for screens larger than 900px wide */
+@media screen and (min-width: 901px) {
+  .bg-res {
+    background-image: url("/public/img/img3.png")
+  }
+}
